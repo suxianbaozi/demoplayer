@@ -22,6 +22,10 @@
 		9EEC4CD5180FB113002F1226 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEC4CB4180FB112002F1226 /* UIKit.framework */; };
 		9EEC4CDD180FB114002F1226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC4CDB180FB114002F1226 /* InfoPlist.strings */; };
 		9EEC4CDF180FB114002F1226 /* player_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC4CDE180FB114002F1226 /* player_demoTests.m */; };
+		9EEC4CE9180FB42E002F1226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEC4CE8180FB42E002F1226 /* AVFoundation.framework */; };
+		9EEC4CEB180FB7D7002F1226 /* tenyear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC4CEA180FB7D7002F1226 /* tenyear.mp3 */; };
+		9EEC4CEF180FBF63002F1226 /* playerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC4CED180FBF63002F1226 /* playerViewController.m */; };
+		9EEC4CF0180FBF63002F1226 /* playerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC4CEE180FBF63002F1226 /* playerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		9EEC4CDA180FB113002F1226 /* player_demoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "player_demoTests-Info.plist"; sourceTree = "<group>"; };
 		9EEC4CDC180FB114002F1226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9EEC4CDE180FB114002F1226 /* player_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = player_demoTests.m; sourceTree = "<group>"; };
+		9EEC4CE8180FB42E002F1226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9EEC4CEA180FB7D7002F1226 /* tenyear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tenyear.mp3; sourceTree = "<group>"; };
+		9EEC4CEC180FBF63002F1226 /* playerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerViewController.h; sourceTree = "<group>"; };
+		9EEC4CED180FBF63002F1226 /* playerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playerViewController.m; sourceTree = "<group>"; };
+		9EEC4CEE180FBF63002F1226 /* playerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = playerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEC4CE9180FB42E002F1226 /* AVFoundation.framework in Frameworks */,
 				9EEC4CB3180FB112002F1226 /* CoreGraphics.framework in Frameworks */,
 				9EEC4CB5180FB112002F1226 /* UIKit.framework in Frameworks */,
 				9EEC4CB1180FB112002F1226 /* Foundation.framework in Frameworks */,
@@ -103,6 +113,7 @@
 		9EEC4CAF180FB112002F1226 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EEC4CE8180FB42E002F1226 /* AVFoundation.framework */,
 				9EEC4CB0180FB112002F1226 /* Foundation.framework */,
 				9EEC4CB2180FB112002F1226 /* CoreGraphics.framework */,
 				9EEC4CB4180FB112002F1226 /* UIKit.framework */,
@@ -119,9 +130,13 @@
 				9EEC4CC2180FB113002F1226 /* Main_iPhone.storyboard */,
 				9EEC4CC5180FB113002F1226 /* Main_iPad.storyboard */,
 				9EEC4CC8180FB113002F1226 /* ViewController.h */,
+				9EEC4CEA180FB7D7002F1226 /* tenyear.mp3 */,
 				9EEC4CC9180FB113002F1226 /* ViewController.m */,
 				9EEC4CCB180FB113002F1226 /* Images.xcassets */,
 				9EEC4CB7180FB112002F1226 /* Supporting Files */,
+				9EEC4CEC180FBF63002F1226 /* playerViewController.h */,
+				9EEC4CED180FBF63002F1226 /* playerViewController.m */,
+				9EEC4CEE180FBF63002F1226 /* playerViewController.xib */,
 			);
 			path = player_demo;
 			sourceTree = "<group>";
@@ -232,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EEC4CC7180FB113002F1226 /* Main_iPad.storyboard in Resources */,
+				9EEC4CF0180FBF63002F1226 /* playerViewController.xib in Resources */,
 				9EEC4CCC180FB113002F1226 /* Images.xcassets in Resources */,
+				9EEC4CEB180FB7D7002F1226 /* tenyear.mp3 in Resources */,
 				9EEC4CC4180FB113002F1226 /* Main_iPhone.storyboard in Resources */,
 				9EEC4CBB180FB112002F1226 /* InfoPlist.strings in Resources */,
 			);
@@ -254,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EEC4CCA180FB113002F1226 /* ViewController.m in Sources */,
+				9EEC4CEF180FBF63002F1226 /* playerViewController.m in Sources */,
 				9EEC4CC1180FB113002F1226 /* AppDelegate.m in Sources */,
 				9EEC4CBD180FB112002F1226 /* main.m in Sources */,
 			);

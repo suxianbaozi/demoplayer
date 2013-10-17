@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITableViewDelegate>
+@property (strong,nonatomic) UITableView *list;
+@property (strong,nonatomic) UIViewController *playerView;
+- (IBAction) play:(id)sender;
 @end
